@@ -1,0 +1,297 @@
+/* Author: Kyle Jones */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ~~~~~~~~~~ Global Styles ~~~~~~~~~~ */
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #222222; /* Dark Gray */
+    background-color: #EAEAEA; /* Light Gray */
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Molle', cursive;
+    color: #9B26B0; /* Purple */
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+a {
+    color: #499BD2; /* Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button, input, select, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ~~~~~~~~~~ Header Styles ~~~~~~~~~~ */
+header {
+    background-color: #F6D64A; /* Yellow */
+    padding: 1rem;
+    text-align: center;
+}
+
+#logo img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1rem;
+    color: #222222;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #55BCD5; /* Teal */
+}
+
+nav ul li a:hover {
+    color: #9B26B0; /* Purple */
+}
+
+/* ~~~~~~~~~~ Main Content ~~~~~~~~~~ */
+main {
+    padding: 1.5rem 0;
+    background-color: #FFFFFF; /* White */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#img-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+#plan, #testimonials, #about {
+    padding: 2rem;
+    text-align: center;
+}
+
+#testimonials div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+#about div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* ~~~~~~~~~~ Form Styles ~~~~~~~~~~ */
+form {
+    background-color: #F6D64A; /* Yellow */
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #222222; /* Dark Gray */
+}
+
+input, select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #55BCD5; /* Teal */
+    color: #FFFFFF; /* White */
+    cursor: pointer;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #9B26B0; /* Purple */
+}
+
+/* ~~~~~~~~~~ Footer ~~~~~~~~~~ */
+footer {
+    background-color: #222222; /* Dark Gray */
+    color: #FFFFFF; /* White */
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #FFFFFF; /* White */
+    margin: 0 1rem;
+}
+
+footer a:hover {
+    color: #55BCD5; /* Teal */
+}
+
+/* ~~~~~~~~~~ Responsive Media Queries ~~~~~~~~~~ */
+
+/* ~~~~~ Tablets (min-width: 768px) ~~~~~ */
+@media (min-width: 768px) {
+    nav ul {
+        gap: 2rem;
+    }
+
+    #img-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #testimonials div, #about div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        padding: 3rem 2rem;
+    }
+
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+/* ~~~~~ Desktops (min-width: 1024px) ~~~~~ */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav ul {
+        gap: 3rem;
+    }
+
+    #img-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #testimonials div, #about div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        padding: 4rem;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
